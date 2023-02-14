@@ -30,7 +30,6 @@ Passo a passo para iniciar o projeto:
 
 ## O que será avaliado?
 
-- Projeto em produção na AWS
 - Em JavaScript, conforme proposta
 - Seguir as atividades na ordem proposta
 - Subir códigos no git ao longo do desenvolvimento
@@ -48,7 +47,6 @@ Passo a passo para iniciar o projeto:
 
 - Aceitar o convite do repositório da sprint-1-pb-aws-univesp;
 - **O trabalho deve ser feito em grupos de quatro pessoas**;
-  - Evitar repetições de grupos da sprint anterior;
 - Criar uma branch no repositório com o formato grupo-número (Exemplo: grupo-1);
 - Subir o trabalho na branch com um [Readme.md](README.md)
   - documentar detalhes sobre como a avaliação foi desenvolvida
