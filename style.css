@@ -1,5 +1,6 @@
 body{
   font-family: 'Poppins', sans-serif;
+  background: #537FE7;
 }
 
 
@@ -12,9 +13,9 @@ body{
 }
 
 .cartao {
-  background: linear-gradient(to right,#eeaeca, #94bbe9);
-  height: 75vh; /*temporary */
-  width: 35vw; /* temporary */
+  background: linear-gradient(to right, #C0EEF2, #E9F8F9);
+  height: 75vh; 
+  width: 35vw; 
   margin: 0 1.5rem;
   border-radius: 1.5rem;
   padding: 1.5rem;
