@@ -47,6 +47,8 @@ body{
 .botao {
 background:  #0066A2;
 color: #fff;
+margin-left: 5rem;
+padding: 5px 20px 5px 20px;
 border: 1px solid #eee;
 border-radius: 20px;
 box-shadow: 5px 5px 5px #eee;
