@@ -1,55 +1,58 @@
-#area
-{
-  position:relative;
-  left:37%;
-  top:29%;
-  width:320px;
-  height:270px;
-}
-#area #formulario
-{
-  position:absolute;
-  display:block;
-}
-fieldset
-{
-  width:300px;
-  height:250px;
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-legend
-{
-  font-style:bold;
-  font-family: "Segoe UI";
-}
-#formulario label
-{
-  position:absolute;
-  left:19px;
-  margin-right:5px;
+.cartao {
+  background: linear-gradient(to right,#eeaeca, #94bbe9);
+  height: 75vh; /*temporary */
+  width: 35vw; /* temporary */
+  margin: 0 1.5rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 7px 7px 13px 0px  hsl(225, 18%, 54%);
 }
 
-
-#formulario input.campo_nome
-{
-  position:absolute;
-  left:95px;
-  top:23px;
-  width:225px;
-}
-#formulario input.campo_email
-{
-  position:absolute;
-  left:95px;
-  margin-top:2px;
-  width:225px;
+.cartao-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9rem;
 }
 
-#formulario input.campo_telefone
-{
-  position:absolute;
-  left:95px;
-  margin-top:2px;
-  width:225px;
+.titulo {
+  padding-bottom: 20px;
+  margin-top: 1.7rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+  
+}
+
+.descricao {
+  margin-top: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  font-size: 17px;
+}
+
+.botao {
+background:  #0066A2;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
+
+.botao:hover {
+background: #B9DFFF;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
 }

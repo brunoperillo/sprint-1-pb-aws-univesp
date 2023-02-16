@@ -2,28 +2,46 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Validação de dados</title>
+
   <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <title>Validação de Dados | Avaliação 1</title>
+
 </head>
 
 <body>
-    <div id="area">
+  <main class="container">
+    <div class="cartao">
+      <div class="cartao-conteudo">
+        <h1 class="titulo">Bem Vindo!</h1>
+
+        <p class="descricao">Insira seus dados para validação</p>
+
+
         <form id="formulario" autocomplete="off">
           <fieldset>
-            <legend>Validação de dados</legend>
+            
             <label>Nome:</label>
-            <input class="campo_nome" type="text"><br>
+            <input class="campo_nome" type="text"><br><br>
             
             <label>Email:</label>
             <input class="campo_email" type="password"><br><br>
             
-            <label for="phone">Telefone:</label>
+            <label for="phone">Tel:</label>
             <input class="campo_telefone" type="tel"><br><br>
 
-            <input class="btn_submit" type="submit" value="Enviar">
+            <input class="botao" type="submit" value="Enviar">
           </fieldset>
         </form>
       </div>
+    </div>
+  </main>
+
 </body>
+
+</html>
