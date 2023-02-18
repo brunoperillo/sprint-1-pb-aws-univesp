@@ -24,7 +24,7 @@ function validarTelefone() {
       }
       return this.telefone;
     }
-  }
+}
   
   
   
