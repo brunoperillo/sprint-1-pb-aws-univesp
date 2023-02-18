@@ -14,6 +14,12 @@ Passo a passo na criação do projeto:
 
 1. Criação da parte visual em formato de formulário a ser preenchido pelo usuário utilizando linguagens HTML5 e CSS3;
 
+2. 
+3. 
+
+4. Validação de Telefone
+- Criação de uma classe que fará a validação do número de telefone inserido;
+- Se seguindo o formato (NN)NNNN-NNNN e apenas números estará tudo OK, caso contrário retornará uma mensagem de erro.
 
 
 ***
