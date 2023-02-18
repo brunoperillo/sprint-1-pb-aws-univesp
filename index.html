@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
@@ -26,23 +27,26 @@
 
         <form id="formulario" autocomplete="off">
           <fieldset>
-            
+
             <label>Nome:</label>
             <input class="campo_nome" type="text" placeholder="Nome Completo"><br><br>
-            
+
             <label>Email:</label>
             <input class="campo_email" type="email" placeholder="seuemail@dominio.com.br"><br><br>
-            
+
             <label for="phone">Fone:</label>
             <input class="campo_telefone" type="tel" id="telefone" placeholder="(XX)XXXXX-XXXX"><br><br>
 
-            <button class="botao" onclick="validarTelefone()">Enviar</button>
+            <button class="botao" id="botao-submit" onclick="validarTelefone()">Enviar</button>
+
+            <p id="mensagem" class="mensagem"></p>
           </fieldset>
         </form>
       </div>
     </div>
   </main>
 
+  <script src="src/script.js"></script>
 </body>
 
 </html>

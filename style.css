@@ -45,6 +45,14 @@ body{
   font-size: 17px;
 }
 
+.mensagem {
+  color: red;
+  margin-top: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  font-size: 17px;
+}
+
 .botao {
 background:  #0066A2;
 color: #fff;
