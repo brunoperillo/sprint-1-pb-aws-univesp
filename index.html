@@ -38,9 +38,12 @@
             <p id="erroEmail" class="mensagem"></p>
 
             <label for="phone">Fone:</label>
-            <input class="campo_telefone" type="tel" id="telefone" placeholder="(XX)XXXXX-XXXX"><br><br>
+            <input class="campo_telefone" type="tel" id="telefone" onblur="validarTelefone()" 
+              placeholder="(NN)NNNN-NNNN" maxlength="13">
+            <br><br>
+            <p id="erroTelefone" class="mensagem"></p>
 
-            <button class="botao" id="botao-submit" onclick="validarTelefone()">Enviar</button>
+            <button type="button" class="botao" id="botao-submit" disabled>Enviar</button>
 
             <p id="mensagem" class="mensagem"></p>
           </fieldset>
