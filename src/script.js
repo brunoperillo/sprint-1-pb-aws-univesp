@@ -100,7 +100,32 @@ document.getElementById("botao-submit").addEventListener("click", (e) => {
 
 });
   
-  
+//Chamadas de validação
+const nome = "";
+const email = "";
+const telefone = "";
+
+const regexNome = /^[a-zA-Zà-úÀ-Ú]+(([',. -][a-zA-Zà-úÀ-Ú ])?[a-zA-Zà-úÀ-Ú]*)*$/;
+const regexEmail = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
+const regexTelefone = /^\(\d{2}\) \d{4}-\d{4}$/;
+
+if (!regexNome.test(nome)) {
+  console.log("Nome inválido.");
+} else {
+  console.log("Nome válido.");
+}
+
+if (!regexEmail.test(email)) {
+  console.log("E-mail inválido.");
+} else {
+  console.log("E-mail válido.");
+}
+if (!regexTelefone.test(telefone)) {
+  console.log("Telefone inválido.");
+} else {
+  console.log("Telefone válido.");
+}
+
   
   
   

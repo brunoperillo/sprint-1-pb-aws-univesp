@@ -21,6 +21,8 @@ Passo a passo na criação do projeto:
 - Criação de uma classe que fará a validação do número de telefone inserido;
 - Se seguindo o formato (NN)NNNN-NNNN e apenas números estará tudo OK, caso contrário retornará uma mensagem de erro.
 
+5. Chamadas de Validação
+
 
 ***
 
