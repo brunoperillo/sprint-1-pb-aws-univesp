@@ -29,7 +29,8 @@
           <fieldset>
 
             <label>Nome:</label>
-            <input class="campo_nome" type="text" placeholder="Nome Completo"><br><br>
+            <input class="campo_nome" type="text" id="nome" onblur="validarNome()" minlength="2" placeholder="Nome Completo"><br><br>
+            <p id="erroNome" class="mensagem"></p>
 
             <label>Email:</label>
             <input class="campo_email" type="email" id="email" onblur="validarEmail()" 
