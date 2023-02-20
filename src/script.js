@@ -5,6 +5,28 @@ const submit = {
   telefone: ''
 }
 
+// Validação de Nome
+function validarNome() {
+  const nome = document.getElementById("nome").value;
+  
+  const mensagemElement = document.getElementById("erroNome");
+  mensagemSubmit.textContent = "";
+  mensagemElement.textContent = "";
+  if (nome.length < 2) {
+    mensagemElement.textContent = "Nome devera conter no minimo 2 caracteres.";
+  } else {
+    const validador = new ValidadorNome(nome);
+    const resultado = validador.validar();
+    if (!resultado) {
+      mensagemElement.textContent = "Nome inválido.";
+    } else {
+      submit.nome = nome;
+      if (estaPreenchido())
+        document.getElementById('botao-submit').disabled = false;
+    }
+  }
+}
+
 // Validação de E-mail
 function validarEmail() {
   const email = document.getElementById("email").value;
@@ -23,8 +45,6 @@ function validarEmail() {
   }
 }
 
-
-
 // Validação de Telefone
 function validarTelefone() {
   const telefone = document.getElementById("telefone").value;
@@ -40,6 +60,19 @@ function validarTelefone() {
     submit.telefone = telefone;
     if (estaPreenchido())
       document.getElementById('botao-submit').disabled = false;
+  }
+}
+class ValidadorNome {
+  constructor(nome) {
+    this.nome = nome;
+  }
+
+  validar() {
+    const regex = /(^[A-ZÀ-úa-z\s]+$)/
+    if (!regex.test(this.nome)) {
+      return false;
+    }
+    return true;
   }
 }
   
@@ -70,6 +103,8 @@ class ValidadorEmail {
   }
 }
 
+ 
+//Chamadas de validação
 function estaPreenchido() {
   if (submit.nome && submit.email && submit.telefone) {
     return true;
@@ -98,34 +133,4 @@ document.getElementById("botao-submit").addEventListener("click", (e) => {
       Telefone: ${submit.telefone}\n`;
   }
 
-});
-  
-//Chamadas de validação
-const nome = "";
-const email = "";
-const telefone = "";
-
-const regexNome = /^[a-zA-Zà-úÀ-Ú]+(([',. -][a-zA-Zà-úÀ-Ú ])?[a-zA-Zà-úÀ-Ú]*)*$/;
-const regexEmail = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
-const regexTelefone = /^\(\d{2}\) \d{4}-\d{4}$/;
-
-if (!regexNome.test(nome)) {
-  console.log("Nome inválido.");
-} else {
-  console.log("Nome válido.");
-}
-
-if (!regexEmail.test(email)) {
-  console.log("E-mail inválido.");
-} else {
-  console.log("E-mail válido.");
-}
-if (!regexTelefone.test(telefone)) {
-  console.log("Telefone inválido.");
-} else {
-  console.log("Telefone válido.");
-}
-
-  
-  
-  
+}); 
